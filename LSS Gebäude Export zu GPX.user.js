@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS Gebäude Export zu GPX
 // @namespace    www.leitstellenspiel.de
-// @version      1.0
+// @version      1.1
 // @description  Fügt einen Button zum Exportieren von Gebäudestandorten als GPX-Datei im Tab "Karte und Fahrzeuge" hinzu
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/settings/index
@@ -84,7 +84,7 @@
         const button = document.createElement('button');
         button.id = 'gpx-export-button';
         button.className = 'btn btn-xs btn-default';
-        button.innerText = 'GPX exportieren';
+        button.innerText = 'Eigene Gebäude zu GPX exportieren';
         button.addEventListener('click', exportGPX);
 
         // Button zum Tab hinzufügen
